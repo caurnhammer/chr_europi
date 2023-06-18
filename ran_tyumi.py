@@ -59,7 +59,7 @@ class OledWrapper:
          
         oled.show()
 
-class TyumiAndHold(EuroPiScript):
+class RanTyumi(EuroPiScript):
     def __init__(self):
         self.my_oled = OledWrapper()
 
@@ -86,5 +86,5 @@ class TyumiAndHold(EuroPiScript):
                 state = self.step(ain.read_voltage() / 10, state)
 
 if __name__ == "__main__":
-    tyumiandhold = TyumiAndHold()
-    tyumiandhold.main()
+    rantyumi = RanTyumi()
+    rantyumi.main()
